@@ -12,7 +12,8 @@ $endfor$
 $if(date-meta)$
   <meta name="date" content="$date-meta$" />
 $endif$
-  <title>$if(title-prefix)$$title-prefix$ - $endif$$if(pagetitle)$$pagetitle$$endif$</title>
+  <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+  <style type="text/css">code{white-space: pre;}</style>
 $if(highlighting-css)$
   <style type="text/css">
 $highlighting-css$
@@ -30,7 +31,7 @@ $endif$
 $for(header-includes)$
   $header-includes$
 $endfor$
-  <script src="$slidy-url$/scripts/slidy.js.gz"
+  <script src="$slidy-url$/scripts/slidy.js"
     charset="utf-8" type="text/javascript"></script>
 $if(duration)$
   <meta name="duration" content="$duration$" />

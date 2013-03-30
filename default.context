@@ -45,6 +45,10 @@ $endif$
    indentnext=no,
   ]
 
+$if(toc)$
+\setupcombinedlist[content][list={$placelist$}]
+
+$endif$
 $for(header-includes)$
 $header-includes$
 $endfor$
